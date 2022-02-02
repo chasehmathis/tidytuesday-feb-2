@@ -1,0 +1,20 @@
+---
+title: "Tidy-Tuesday February 2 2022"
+author: "Chase Mathis"
+format: html
+editor: visual
+---
+
+## Tidy Tuesday
+
+###### February 2, 2022
+
+### Get Data
+
+```{r load-packages-get-data}
+library(tidyverse)
+tuesdata <- tidytuesdayR::tt_load('2022-02-01')
+tuesdata <- tidytuesdayR::tt_load(2022, week = 5)
+
+breed_traits <- tuesdata$breed_traits
+```
